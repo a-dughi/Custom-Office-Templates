@@ -46,8 +46,8 @@ _data = {
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_7cwqa")]
 position = Vector2(21, 50)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(19, 36)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, -6)
 zoom = Vector2(4, 4)
 
 [node name="AnimatableBody2D" parent="." instance=ExtResource("2_de25m")]
@@ -65,4 +65,8 @@ autoplay = "new_animation"
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
 
-[node name="Node2D" type="Node2D" parent="TileMap"]
+[node name="AnimatableBody2D3" parent="." instance=ExtResource("2_de25m")]
+position = Vector2(7, -23)
+
+[node name="AnimatableBody2D4" parent="." instance=ExtResource("2_de25m")]
+position = Vector2(42, -41)
