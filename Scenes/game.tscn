@@ -64,7 +64,3 @@ autoplay = "new_animation"
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
-
-[node name="Node2D" type="Node2D" parent="TileMap"]
-
-[node name="Node2D" type="Node2D" parent="TileMap/Node2D"]
