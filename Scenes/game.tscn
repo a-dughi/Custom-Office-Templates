@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://b1crmceooylof" path="res://Scenes/animatable_body_2d.tscn" id="2_de25m"]
 [ext_resource type="PackedScene" uid="uid://bivvwdvt787qe" path="res://Scenes/dying.tscn" id="3_kdog2"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ibpcu"]
+
 [sub_resource type="Animation" id="Animation_fwydn"]
 length = 0.001
 tracks/0/type = "value"
@@ -42,8 +44,6 @@ _data = {
 "new_animation": SubResource("Animation_jq8gn")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ibpcu"]
-
 [node name="game" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_7cwqa")]
@@ -54,6 +54,13 @@ position = Vector2(0, -6)
 zoom = Vector2(4, 4)
 limit_bottom = 136
 limit_smoothed = true
+
+[node name="dying" parent="." instance=ExtResource("3_kdog2")]
+position = Vector2(-30, 99)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dying"]
+position = Vector2(37, 29)
+shape = SubResource("WorldBoundaryShape2D_ibpcu")
 
 [node name="AnimatableBody2D" parent="." instance=ExtResource("2_de25m")]
 position = Vector2(21, 55)
@@ -67,18 +74,8 @@ libraries = {
 }
 autoplay = "new_animation"
 
-[node name="TileMap" type="TileMap" parent="."]
-format = 2
-
 [node name="AnimatableBody2D3" parent="." instance=ExtResource("2_de25m")]
 position = Vector2(7, -23)
 
 [node name="AnimatableBody2D4" parent="." instance=ExtResource("2_de25m")]
 position = Vector2(42, -41)
-
-[node name="dying" parent="." instance=ExtResource("3_kdog2")]
-position = Vector2(-30, 99)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="dying"]
-position = Vector2(37, 29)
-shape = SubResource("WorldBoundaryShape2D_ibpcu")
