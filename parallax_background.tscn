@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bulbcbuoc6rrj"]
+
+[ext_resource type="Texture2D" uid="uid://n85i7mhytj6y" path="res://Assets/pixilart-drawing (5).png" id="1_cr2vd"]
+[ext_resource type="Texture2D" uid="uid://jec16wouwddl" path="res://cloud.webp" id="2_6on0y"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(300, 300)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("1_cr2vd")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.75, 0.75)
+motion_mirroring = Vector2(400, 200)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6on0y")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(300, 300)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(186, 112)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6on0y")
+centered = false
