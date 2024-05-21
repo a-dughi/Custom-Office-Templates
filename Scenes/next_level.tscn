@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0wefh8dixkh"]
+
+[ext_resource type="Texture2D" uid="uid://bv6bdbs06uq2k" path="res://Assets/pixilart-drawing (6).png" id="1_4isha"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xlo3y"]
+size = Vector2(5, 16)
+
+[node name="NextLevel" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_4isha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7, -5)
+shape = SubResource("RectangleShape2D_xlo3y")

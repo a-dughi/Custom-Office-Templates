@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn1nfarh3wbef"
-path="res://.godot/imported/cloud.webp-862406a722f932bee92b2eb67cb5e998.ctex"
+uid="uid://bv6bdbs06uq2k"
+path="res://.godot/imported/pixilart-drawing (6).png-d9b7b13548da585dd75fa221687e3456.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cloud.webp"
-dest_files=["res://.godot/imported/cloud.webp-862406a722f932bee92b2eb67cb5e998.ctex"]
+source_file="res://Assets/pixilart-drawing (6).png"
+dest_files=["res://.godot/imported/pixilart-drawing (6).png-d9b7b13548da585dd75fa221687e3456.ctex"]
 
 [params]
 

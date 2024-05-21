@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://c54ii8euffkpg"]
+[gd_scene load_steps=11 format=3 uid="uid://c54ii8euffkpg"]
 
 [ext_resource type="PackedScene" uid="uid://bdn8r48mnqneo" path="res://Scenes/character_body_2d.tscn" id="1_7cwqa"]
 [ext_resource type="PackedScene" uid="uid://b1crmceooylof" path="res://Scenes/animatable_body_2d.tscn" id="2_de25m"]
-[ext_resource type="Script" path="res://Scenes/Camera2D.gd" id="2_f7mx7"]
+[ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="2_f7mx7"]
 [ext_resource type="PackedScene" uid="uid://bivvwdvt787qe" path="res://Scenes/dying.tscn" id="3_kdog2"]
-[ext_resource type="PackedScene" path="res://parallax_background.tscn" id="5_cf0hu"]
+[ext_resource type="PackedScene" uid="uid://bulbcbuoc6rrj" path="res://Scenes/parallax_background.tscn" id="5_cf0hu"]
+[ext_resource type="PackedScene" uid="uid://d0wefh8dixkh" path="res://Scenes/next_level.tscn" id="6_yk1nu"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ibpcu"]
 
@@ -84,3 +85,6 @@ position = Vector2(7, -23)
 position = Vector2(42, -41)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("5_cf0hu")]
+
+[node name="NextLevel" parent="." instance=ExtResource("6_yk1nu")]
+position = Vector2(50, -48)
