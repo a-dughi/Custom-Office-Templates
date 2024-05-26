@@ -54,7 +54,6 @@ _data = {
 script = ExtResource("1_3ts03")
 
 [node name="gameManager" type="Node" parent="."]
-unique_name_in_owner = true
 script = ExtResource("2_ay2hc")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="gameManager"]

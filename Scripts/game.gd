@@ -25,8 +25,8 @@ func _position():
 	for i in range(numLevels):	
 		var j = 0;
 		while j<20:
-			var xTemp = randf_range(0, 300)
-			var yTemp = randf_range(-200, 100)
+			var xTemp = randf_range(0, 200)
+			var yTemp = randf_range(-400, 55)
 			var present = false
 			for k in range(xPos.size()):
 				var xPrev = xPos[k]
