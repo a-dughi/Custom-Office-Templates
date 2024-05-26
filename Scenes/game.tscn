@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://c54ii8euffkpg"]
+[gd_scene load_steps=13 format=3 uid="uid://c54ii8euffkpg"]
 
 [ext_resource type="PackedScene" uid="uid://bdn8r48mnqneo" path="res://Scenes/character_body_2d.tscn" id="1_7cwqa"]
+[ext_resource type="Script" path="res://Scenes/game.gd" id="1_i2qp3"]
 [ext_resource type="PackedScene" uid="uid://b1crmceooylof" path="res://Scenes/animatable_body_2d.tscn" id="2_de25m"]
 [ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="2_f7mx7"]
 [ext_resource type="PackedScene" uid="uid://bivvwdvt787qe" path="res://Scenes/dying.tscn" id="3_kdog2"]
 [ext_resource type="PackedScene" uid="uid://bthdyalhmnhku" path="res://Scenes/parallax_background.tscn" id="5_cf0hu"]
+[ext_resource type="Script" path="res://Scripts/dying.gd" id="5_hqi8g"]
 [ext_resource type="PackedScene" uid="uid://jgymm2mnq2ri" path="res://Scenes/next_level.tscn" id="6_yk1nu"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ibpcu"]
@@ -48,6 +50,7 @@ _data = {
 }
 
 [node name="game" type="Node2D"]
+script = ExtResource("1_i2qp3")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_7cwqa")]
 position = Vector2(21, 50)
@@ -61,6 +64,7 @@ script = ExtResource("2_f7mx7")
 
 [node name="dying" parent="." instance=ExtResource("3_kdog2")]
 position = Vector2(-30, 99)
+script = ExtResource("5_hqi8g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dying"]
 position = Vector2(37, 29)
