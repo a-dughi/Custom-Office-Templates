@@ -5,7 +5,7 @@ var block = preload("res://Scenes/animatable_body_2d.tscn")
 var xPos = []
 var yPos = []
 var numLevels = 1
-#figure out how to bypass the first thing, figure out array access issue
+
 # Called when the node enters the scene tree for the first time.
 
 func _ready():
@@ -16,8 +16,6 @@ func _ready():
 			
 			var new_block = block.instantiate()
 			
-			new_block.global_position.x = xPos[i] #randf_range(-100, 100) 
-			new_block.global_position.y = yPos[i] #randf_range(-100, 100)
 			
 			self.add_child(new_block)
 				
