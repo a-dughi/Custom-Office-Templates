@@ -15,8 +15,8 @@ func _ready():
 		for i in range(20):
 			
 			var new_block = block.instantiate()
-			
-			
+			new_block.global_position.x = xPos[i]
+			new_block.global_position.y = yPos[i]
 			self.add_child(new_block)
 				
 			
