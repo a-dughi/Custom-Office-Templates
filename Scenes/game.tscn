@@ -1,15 +1,10 @@
-
 [gd_scene load_steps=10 format=3 uid="uid://c54ii8euffkpg"]
 
-
-[ext_resource type="Script" path="res://Scripts/game.gd" id="1_3ts03"]
 [ext_resource type="PackedScene" uid="uid://bdn8r48mnqneo" path="res://Scenes/character_body_2d.tscn" id="1_7cwqa"]
-
 [ext_resource type="PackedScene" uid="uid://b1crmceooylof" path="res://Scenes/animatable_body_2d.tscn" id="2_de25m"]
 [ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="2_f7mx7"]
 [ext_resource type="PackedScene" uid="uid://bivvwdvt787qe" path="res://Scenes/dying.tscn" id="3_kdog2"]
 [ext_resource type="PackedScene" uid="uid://bthdyalhmnhku" path="res://Scenes/parallax_background.tscn" id="5_cf0hu"]
-
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ibpcu"]
 
@@ -53,7 +48,6 @@ _data = {
 
 [node name="game" type="Node2D"]
 
-
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_7cwqa")]
 position = Vector2(-1, 53)
 
@@ -76,7 +70,6 @@ text = "Level: 0"
 
 [node name="dying" parent="." instance=ExtResource("3_kdog2")]
 position = Vector2(-30, 99)
-script = ExtResource("5_hqi8g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dying"]
 position = Vector2(37, 29)
