@@ -8,6 +8,7 @@ size = Vector2(11, 11)
 
 [node name="character" type="CharacterBody2D"]
 z_index = 5
+collision_layer = 2
 script = ExtResource("1_yc67e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
