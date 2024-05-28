@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 150.0
 
-const JUMP_VELOCITY = -300.0
+const JUMP_VELOCITY = -400.0
 var characterPos = global_position.y
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
