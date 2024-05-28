@@ -26,7 +26,7 @@ func _position():
 		var j = 0;
 		while j<10:
 			var xTemp = randf_range(0, 100)
-			var yTemp = randf_range(-200, 100)
+			var yTemp = randf_range(-200, 50)
 			var present = false
 			for k in range(xPos.size()):
 				var xPrev = xPos[k]
