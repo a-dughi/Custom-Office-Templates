@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://e7qegn0478p3"]
+[gd_scene load_steps=9 format=3 uid="uid://cplm5jhg66g3e"]
 
 [ext_resource type="Texture2D" uid="uid://cydy33r7yjpos" path="res://Assets/pixilart-drawing (7).png" id="1_gu5o7"]
 [ext_resource type="Script" path="res://Scenes/coin.gd" id="1_h2s6o"]

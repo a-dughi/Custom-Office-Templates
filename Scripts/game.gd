@@ -1,6 +1,7 @@
 extends Node2D
 
 var block = preload("res://Scenes/animatable_body_2d.tscn")
+var coin = preload("res://Scenes/coin.tscn")
 
 var xPos = []
 var yPos = []
@@ -12,19 +13,24 @@ func _ready():
 	# Replace with function body.
 		_position()
 	
-		for i in range(10):
+		for i in range(5):
 			var new_block = block.instantiate()
 			
 			new_block.global_position.x = xPos[i]  
 			new_block.global_position.y = yPos[i] 
+			var new_coin
+			if(i%3==0):
+				new_coin = coin.instantiate()
+				new_coin.global_position.x = xPos[i]
+				new_coin.global_position.y = yPos[i]-10
 			
 			self.add_child(new_block)
-			
+			self.add_child(new_coin)
 			
 func _position():
 	for i in range(numLevels):	
 		var j = 0;
-		while j<10:
+		while j<5:
 			var xTemp = randf_range(0, 100)
 			var yTemp = randf_range(-200, 50)
 			var present = false
