@@ -161,3 +161,14 @@ size_flags_horizontal = 3
 size_flags_vertical = 10
 text = "Level: 6"
 horizontal_alignment = 1
+
+[node name="You Won" type="Label" parent="Node"]
+z_index = -10
+offset_left = -35.0
+offset_top = -2436.0
+offset_right = 61.0
+offset_bottom = -2413.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+text = "\"You Won!!!\""
+horizontal_alignment = 1
