@@ -38,5 +38,6 @@ func add_level():
 			level_text.text = "Level: 1"
 	if characterPos > -150 && characterPos < -50:
 			level_text.text = "Level: 2" 
+			
 	
 

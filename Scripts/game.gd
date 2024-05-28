@@ -13,7 +13,7 @@ func _ready():
 	# Replace with function body.
 		_position()
 	
-		for i in range(5):
+		for i in range(5*numLevels):
 			var new_block = block.instantiate()
 			
 			new_block.global_position.x = xPos[i]  
