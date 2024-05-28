@@ -89,12 +89,6 @@ libraries = {
 }
 autoplay = "new_animation"
 
-[node name="AnimatableBody2D3" parent="." instance=ExtResource("2_de25m")]
-position = Vector2(7, -23)
-
-[node name="AnimatableBody2D4" parent="." instance=ExtResource("2_de25m")]
-position = Vector2(42, -51)
-
 [node name="ParallaxBackground" parent="." instance=ExtResource("5_cf0hu")]
 
 [node name="Node" type="Node" parent="."]

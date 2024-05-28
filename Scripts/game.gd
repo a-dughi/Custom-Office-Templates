@@ -31,7 +31,7 @@ func _position():
 			for k in range(xPos.size()):
 				var xPrev = xPos[k]
 				var yPrev = yPos[k]
-				if ((xTemp<xPrev+50) && (xTemp>xPrev-50)) && ((yTemp<yPrev+50) && (yTemp>yPrev-50)):
+				if ((xTemp<xPrev+40) && (xTemp>xPrev-40)) && ((yTemp<yPrev+50) && (yTemp>yPrev-50)):
 					present = true
 				
 			if present:
