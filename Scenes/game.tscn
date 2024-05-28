@@ -108,10 +108,10 @@ horizontal_alignment = 1
 
 [node name="Level 2" type="Label" parent="Node"]
 z_index = -10
-offset_left = -31.0
-offset_top = -76.0
-offset_right = 27.0
-offset_bottom = -53.0
+offset_left = -60.0
+offset_top = -126.0
+offset_right = -2.0
+offset_bottom = -103.0
 size_flags_horizontal = 3
 size_flags_vertical = 10
 text = "Level: 2"
@@ -120,11 +120,44 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Level 3" type="Label" parent="Node"]
 z_index = -10
-offset_left = -111.0
-offset_top = -189.0
-offset_right = -53.0
-offset_bottom = -166.0
+offset_left = 75.0
+offset_top = -524.0
+offset_right = 133.0
+offset_bottom = -501.0
 size_flags_horizontal = 3
 size_flags_vertical = 10
 text = "Level: 3"
+horizontal_alignment = 1
+
+[node name="Level 4" type="Label" parent="Node"]
+z_index = -10
+offset_left = -127.0
+offset_top = -920.0
+offset_right = -69.0
+offset_bottom = -897.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+text = "Level: 4"
+horizontal_alignment = 1
+
+[node name="Level 5" type="Label" parent="Node"]
+z_index = -10
+offset_left = -30.0
+offset_top = -1318.0
+offset_right = 28.0
+offset_bottom = -1295.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+text = "Level: 5"
+horizontal_alignment = 1
+
+[node name="Level 6" type="Label" parent="Node"]
+z_index = -10
+offset_left = 90.0
+offset_top = -1726.0
+offset_right = 148.0
+offset_bottom = -1703.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+text = "Level: 6"
 horizontal_alignment = 1

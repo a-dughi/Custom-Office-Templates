@@ -9,7 +9,8 @@ var characterPos = global_position.y
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-
+#default godot code for physics of a character
+#allows character to jump, move left, and move right
 func _physics_process(delta):
 	characterPos = global_position.y
 	add_level()
@@ -33,11 +34,19 @@ func _physics_process(delta):
 	
 @onready var level_text = $CanvasLayer/Level
 	
+#changes level based on which range of elevation the character is in
 func add_level():
 	if characterPos > -50 && characterPos < 100:
 			level_text.text = "Level: 1"
-	if characterPos > -150 && characterPos < -50:
+	if characterPos > -450 && characterPos < -50:
 			level_text.text = "Level: 2" 
-			
+	if characterPos > -850 && characterPos < -450:
+			level_text.text = "Level: 3" 		
+	if characterPos > -1250 && characterPos < -850:
+			level_text.text = "Level: 4" 
+	if characterPos > -1650 && characterPos < -1250:
+			level_text.text = "Level: 5" 		
+	if characterPos > -2050 && characterPos < -1650:
+			level_text.text = "Level: 6" 
 	
 

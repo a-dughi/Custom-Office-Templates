@@ -5,7 +5,7 @@ var coin = preload("res://Scenes/coin.tscn")
 
 var xPos = []
 var yPos = []
-var numLevels = 1
+var numLevels = 6
 
 # Called when the node enters the scene tree for the first time.
 
@@ -13,7 +13,7 @@ func _ready():
 	# Replace with function body.
 		_position()
 	
-		for i in range(5*numLevels):
+		for i in range(16*numLevels):
 			var new_block = block.instantiate()
 			
 			new_block.global_position.x = xPos[i]  
@@ -30,14 +30,14 @@ func _ready():
 func _position():
 	for i in range(numLevels):	
 		var j = 0;
-		while j<5:
-			var xTemp = randf_range(0, 100)
-			var yTemp = randf_range(-200, 50)
+		while j<16:
+			var xTemp = randf_range(-50, 100)
+			var yTemp = randf_range(-400*(i+1), (-400*(i+1))+400)
 			var present = false
 			for k in range(xPos.size()):
 				var xPrev = xPos[k]
 				var yPrev = yPos[k]
-				if ((xTemp<xPrev+40) && (xTemp>xPrev-40)) && ((yTemp<yPrev+50) && (yTemp>yPrev-50)):
+				if ((xTemp<xPrev+35) && (xTemp>xPrev-35)) && ((yTemp<yPrev+35) && (yTemp>yPrev-35)):
 					present = true
 				
 			if present:
@@ -46,6 +46,7 @@ func _position():
 				xPos.insert(j*i, xTemp)
 				yPos.insert(j*i, yTemp)
 				j = j+1
+			
 
 
 				
