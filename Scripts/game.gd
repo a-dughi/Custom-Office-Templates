@@ -12,7 +12,7 @@ func _ready():
 	# Replace with function body.
 		_position()
 	
-		for i in range(15):
+		for i in range(10):
 			var new_block = block.instantiate()
 			
 			new_block.global_position.x = xPos[i]  
@@ -22,24 +22,26 @@ func _ready():
 			
 			
 func _position():
-	var j = -1
-	for i in range(numLevels):
-		j = j+1
-		while j<15:
+	for i in range(numLevels):	
+		var j = 0;
+		while j<10:
 			var xTemp = randf_range(0, 100)
-			var yTemp = randf_range(-200*(i+1), 100)
+			var yTemp = randf_range(-200, 100)
 			var present = false
 			for k in range(xPos.size()):
 				var xPrev = xPos[k]
 				var yPrev = yPos[k]
-				if (xTemp+50==xPrev) || (xTemp-50==xPrev) || (yTemp+50 ==yPrev) || (yTemp-50==yPrev):
+				if ((xTemp<xPrev+50) && (xTemp>xPrev-50)) && ((yTemp<yPrev+50) && (yTemp>yPrev-50)):
 					present = true
+				
 			if present:
 				pass
 			else:
 				xPos.insert(j*i, xTemp)
 				yPos.insert(j*i, yTemp)
 				j = j+1
+
+
 				
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
