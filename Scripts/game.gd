@@ -12,7 +12,7 @@ func _ready():
 	# Replace with function body.
 		_position()
 	
-		for i in range(10):
+		for i in range(20):
 			var new_block = block.instantiate()
 			
 			new_block.global_position.x = xPos[i]  
@@ -26,8 +26,8 @@ func _position():
 	for i in range(numLevels):
 		var j = 0
 		while j<20:
-			var xTemp = randf_range(400, 1000)
-			var yTemp = randf_range(200, 500)
+			var xTemp = randf_range(-50, 200)
+			var yTemp = randf_range(-400, 100)
 			var present = false
 			for k in range(xPos.size()):
 				var xPrev = xPos[k]
