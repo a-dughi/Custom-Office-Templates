@@ -63,7 +63,7 @@ func _position():
 
 @onready var coin_text = $CanvasLayer/CoinCounter				
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Called every fframe. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
 	
